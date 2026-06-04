@@ -78,7 +78,7 @@ LXD-VPS-BOT allows communities, hosting providers, and VPS services to create, m
 
 2. Open the configuration section inside `bot.py`.
 
-3. Configure all required variables:
+3. Configure all required variables
 
 4. Run the installer:
 
