@@ -87,8 +87,6 @@ The bot uses a remote **SGM Node API** to manage containers across multiple serv
 
 The Discord bot acts as the control panel, while remote node hosts handle container operations through the SGM Node API.
 
-The bot and node hosts do not need to run on the same machine.
-
 ---
 
 ## 🔧 Installation
