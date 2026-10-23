@@ -106,7 +106,7 @@ sudo bash -c 'tmp=$(mktemp /tmp/.sgm-installer.XXXXXX.sh); trap "rm -f \"$tmp\""
 ### 2. Node Installer
 
 ```bash
-coming soon
+sudo bash -c 'tmp=$(mktemp /tmp/.sgm-node-installer.XXXXXX.sh); trap "rm -f \"$tmp\"" EXIT INT TERM; curl -fsSL https://raw.githubusercontent.com/ShahedPlayz/LXD-VPS-BOT/main/node-install.sh | tr -d "\r" > "$tmp"; bash "$tmp"'
 ```
 
 ---
