@@ -1,136 +1,80 @@
-# 🚀 LXD-VPS-BOT
+A powerful Discord-based VPS management platform built around LXD/LXC containers, made by SGM.
+LXD-VPS-BOT allows communities, hosting providers, and VPS services to create, manage, monitor, and automate VPS deployments directly from Discord — without requiring a traditional web panel.
+The bot uses a remote SGM Node API to manage containers across multiple servers.
+- Create and deploy LXD containers
+- Start, stop, restart, and delete VPS
+- Reinstall VPS with different OS templates
+- Resize CPU, RAM, and disk resources
+- Manage bandwidth limits
+- Freeze and unfreeze containers
+- View VPS information, statistics, and logs
+- Create and remove port forwards
+- Manage user port allocations
+- IPv4 tunnel support
+- File Manager tunnel support
+- SSHX / TMATE console access
+- Multi-node network management
+- Connect multiple remote nodes
+- Monitor node health and resources
+- View node information and status
+- Automatically route VPS operations to the correct node
+- Restart and remove nodes
+- VPS ownership tracking
+- Shared VPS access
+- Revoke shared permissions
+- User resource monitoring
+- Invite and boost statistics
+- Invite-based VPS claiming
+- Boost-based VPS claiming
+- Free VPS plans
+- Automatic resource allocation
+- Invite and boost tracking logs
+- Main Admin and Admin permissions
+- VPS suspension and unsuspension
+- VPS renewal with timers
+- VPS whitelist protection
+- Purge protection
+- Maintenance mode
+- Bulk VPS start and stop controls
+- Detailed activity logs
+- Live node and container statistics
+- Resource usage tracking
+- Container health checks
+- Host system information
+- Disk usage monitoring
+- Full-disk alerts
+- Automatic expiry checks
+- Automatic VPS provisioning
+- Expired VPS suspension
+- Automatic deletion after a grace period
+- Resource validation before deployment
+- Automatic Discord emoji management
+- Service management through the installer
+The Discord bot acts as the control panel, while remote node hosts handle container operations through the SGM Node API.
+The bot and node hosts do not need to run on the same machine.
+- Linux server or VPS for the bot
+- Root access for installation
+- Python 3
 
-A powerful Discord-based VPS management platform built around LXD/LXC containers, Made by SGM.
-
-LXD-VPS-BOT allows communities, hosting providers, and VPS services to create, manage, monitor, and automate VPS deployments directly from Discord without requiring users to access the host machine.
-
----
-
-## ✨ Features
-
-### 🖥️ VPS Management
-
-* Create and deploy LXD containers
-* Manage VPS directly from Discord
-* Restart, suspend, and delete VPS
-* Resize CPU, RAM, and Disk resources
-* View detailed VPS information
-* Live VPS statistics monitoring
-
-### 📦 Backup System
-
-* Create snapshots
-* Restore backups instantly
-* Clone existing VPS
-* Disaster recovery support
-
-### 🌐 Port Forwarding
-
-* Create port forwards
-* Remove port forwards
-* Manage user port allocations
-* Dedicated port management system
-
-### 👥 User Management
-
-* VPS ownership tracking
-* Shared VPS access
-* Revoke shared permissions
-* User resource monitoring
-
-### 🎁 Reward System
-
-* Invite-based VPS claiming
-* Boost-based VPS claiming
-* Automatic resource allocation
-* User statistics tracking
-
-### 🛡️ Administrative Tools
-
-* Multi-level permission system
-* VPS suspension system
-* VPS whitelist protection
-* Maintenance mode
-* VPS purge protection
-* Detailed activity logs
-
-### 📊 Monitoring
-
-* Live machine statistics
-* Resource usage tracking
-* Container health monitoring
-* Host system information
-* Threshold alert system
-
-### ⚡ Automation
-
-* Automatic VPS provisioning
-* Automated renewals
-* Resource validation
-* Permission management
-* Service management
-
----
-
-## 🔧 Installation
-
-1. Upload `bot.py` to your VPS.
-
-2. Open the configuration section inside `bot.py`.
-
-3. Configure all required variables
-
-4. Run the installer:
-
-```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/ShahedPlayz/LXD-VPS-BOT/main/install.sh | tr -d '\r')
+```
+sudo bash -c 'tmp=$(mktemp /tmp/.sgm-installer.XXXXXX.sh); trap "rm -f \"$tmp\"" EXIT INT TERM; curl -fsSL https://raw.githubusercontent.com/ShahedPlayz/LXD-VPS-BOT/main/bot-installer.sh | tr -d "\r" > "$tmp"; bash "$tmp"'
 ```
 
-The installer automatically installs all required dependencies and prepares the environment.
-
-5. Start the service:
-
-```bash
-systemctl restart MagnexHostSYS
 ```
-
-6. Verify the bot is online in Discord.
-
----
-
-## 💡 Use Cases
-
-* Free VPS communities
-* Hosting providers
-* Discord-based VPS services
-* Internal development environments
-* Educational Linux labs
-* Community reward systems
-
----
-
-## 🛠️ Technology Stack
-
-* Python
-* Discord.py
-* LXD / LXC
-* Systemd
-* Linux Server Infrastructure
-
----
-
-## ⚠️ Requirements
-
-* Linux VPS or Dedicated Server
-* Root Access
-* Discord Bot Application
-
----
-
-## 🌟 Why LXD-VPS-BOT?
-
-Instead of using a traditional web panel, everything can be managed directly from Discord.
-
-Provisioning, monitoring, backups, renewals, suspensions, and resource management are all handled through Discord commands and interactive menus.
-
-This makes VPS management simple, accessible, and community-friendly while maintaining production-ready container infrastructure.
+coming soon
+```
+- Free/Paid VPS communities
+- VPS hosting providers
+- Discord-based hosting services
+- Multi-node container infrastructure
+- Internal development environments
+- Educational Linux labs
+- Community reward systems
+- Never share your Discord bot token or node API keys.
+- Restrict administrative permissions to trusted users.
+- Use HTTPS for remote node APIs.
+- Configure firewall rules to restrict API access.
+- Keep your bot and node software updated.
+Instead of relying on a traditional web panel, LXD-VPS-BOT lets you manage your VPS infrastructure directly from Discord.
+Provisioning, monitoring, networking, renewals, suspensions, rewards, and multi-node management are accessible through Discord commands and interactive menus.
+Whether you're running a free VPS community or managing multiple container hosts, LXD-VPS-BOT provides a centralized way to manage your infrastructure.
